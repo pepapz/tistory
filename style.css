@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", Pretendard;
+  font-size: 12px;
+}
+
+ul, ol, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.ct {
+  padding: 40px;
+}
+.ct div + div {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid rgb(238, 242, 244);
+}
+
+.ct a:not(.link_tit) {
+  display: block;
+  padding: 10px;
+  font-size: 11px;
+}
+
+.c_cnt, .link_tit {
+  display: none;
+}
+
+.ct a.link_sub_item {
+  padding-left: 16px;
+}
+
+.side_title {
+  margin-bottom: 10px;
+  font-size: 12px;
+  letter-spacing: -0.8px;
+}/*# sourceMappingURL=style.css.map */
