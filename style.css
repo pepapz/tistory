@@ -143,8 +143,59 @@ a {
 
 .content {
   width: calc(100% - 240px);
-  padding: 60px;
+}
+
+.middle {
+  padding: 60px 60px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
+}
+
+header {
+  padding: 40px 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .page {
+  display: flex;
+  display: none;
+}
+header .page a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  font-weight: 200;
+  font-size: 10px;
+  color: rgb(40, 40, 40);
+}
+header .page a + a {
+  margin-left: 2px;
+}
+header .page i {
+  font-size: 12px;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+}
+.profile img {
+  width: 70px;
+  border-radius: 20px;
+}
+.profile .sub {
+  margin-left: 10px;
+}
+.profile .sub .name {
+  font-weight: 500;
+  font-size: 11px;
+}
+.profile .sub .desc {
+  margin-top: 10px;
+  font-size: 10px;
+  color: rgb(80, 80, 80);
+  letter-spacing: -0.8px;
 }/*# sourceMappingURL=style.css.map */
