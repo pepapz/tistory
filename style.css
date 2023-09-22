@@ -86,12 +86,13 @@ a {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
-  font-size: 11px;
+  font-size: 9px;
   letter-spacing: -0.8px;
-  font-weight: 500;
+  font-weight: 400;
+  color: rgb(40, 40, 40);
 }
 .side_title i {
-  font-size: 7px;
+  font-size: 8px;
   margin-right: 10px;
   /* margin-bottom: 0px; */
   vertical-align: baseline;
@@ -107,7 +108,7 @@ a {
   padding: 10px;
   padding-left: 16px;
   font-family: "PP Neue Montreal", Pretendard;
-  font-size: 10px;
+  font-size: 9px;
   color: rgb(150, 150, 150);
 }
 
@@ -136,10 +137,35 @@ a {
 }
 
 .a2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   background-image: url(images/ric.jpg);
   background-size: cover;
-  background-position: 0% 0;
+  background-position: center;
   box-shadow: #ffffff inset 0px 0px 30px 0px;
+}
+.a2 span {
+  letter-spacing: -0.4px;
+  color: #fff;
+  border-radius: 20px;
+  padding: 10px 10px;
+  font-weight: 200;
+  font-size: 10px;
+}
+.a2 svg {
+  float: right;
+  stroke: #fff;
+}
+.a2 div {
+  flex: 1;
+}
+.a2 div i {
+  float: right;
+  font-size: 24px;
+}
+.a2 img {
+  width: 30px;
 }
 
 .content {
@@ -164,7 +190,11 @@ header {
   align-items: center;
 }
 header h1 {
-  font-weight: 500;
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "mosfaghet";
 }
 header .page {
   display: flex;
@@ -206,7 +236,7 @@ header .page i {
 }
 .profile .sub .desc {
   margin-top: 10px;
-  font-size: 10px;
+  font-size: 9px;
   color: rgb(80, 80, 80);
   letter-spacing: -0.6px;
 }
@@ -278,27 +308,25 @@ footer div {
   font-size: 7px;
   transition: color 0.3s ease-in-out;
 }
-
 .menu {
   flex: 1;
 }
 
-/*
 .tt_category {
-    opacity: 0;
-    max-height: 0;
-    overflow: hidden;
-    transition: opacity 200ms linear, max-height 200ms linear;
-    will-change: opacity, max-height;
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
 }
 
 .cate_open {
-    cursor: pointer;
+  cursor: pointer;
 }
+
 .cate_open[aria-expanded=true] + .tt_category {
-    opacity: 1;
-    max-height: 500px;
-    transition: all 200ms linear;
-    will-change: opacity, max-height;
-}
-*//*# sourceMappingURL=style.css.map */
+  opacity: 1;
+  max-height: 500px;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}/*# sourceMappingURL=style.css.map */
