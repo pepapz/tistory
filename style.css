@@ -31,7 +31,7 @@ a {
 }
 
 .ct {
-  background-color: #fff;
+  position: relative;
   width: 20%;
   width: 240px;
   padding: 40px;
@@ -74,7 +74,7 @@ a {
 
 .sub_category_list {
   margin: 5px 0px 5px 16px;
-  border-left: 1px dashed rgb(226, 226, 226);
+  border-left: 0.5px dashed rgb(80, 80, 80);
 }
 .sub_category_list a {
   font-size: 10px !important;
@@ -143,6 +143,9 @@ a {
 
 .content {
   width: calc(100% - 240px);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .middle {
@@ -150,6 +153,7 @@ a {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 10px;
+  flex: 1;
 }
 
 header {
@@ -197,11 +201,10 @@ header .page i {
   margin-top: 10px;
   font-size: 10px;
   color: rgb(80, 80, 80);
-  letter-spacing: -0.8px;
+  letter-spacing: -0.6px;
 }
 
-.category_wrapper .category_background {
-  border-radius: 12px;
+.category_background {
   bottom: 0;
   left: 0;
   overflow: hidden;
@@ -209,11 +212,12 @@ header .page i {
   right: 0;
   top: 0;
   z-index: -1;
+  margin-top: 0 !important;
 }
 
-.category_wrapper .backdrop {
-  backdrop-filter: blur(50px);
-  -webkit-backdrop-filter: blur(50px);
+.backdrop {
+  backdrop-filter: blur(110px);
+  -webkit-backdrop-filter: blur(110px);
   background: transparent;
   bottom: 0;
   left: 0;
@@ -223,7 +227,7 @@ header .page i {
   z-index: 1;
 }
 
-.category_wrapper .category_background .elemColor {
+.category_background .elemColor {
   border-radius: 100%;
   height: 100%;
   left: 0;
@@ -236,7 +240,7 @@ header .page i {
   width: 100%;
 }
 
-.category_wrapper .category_element {
+.category_element {
   -webkit-backdrop-filter: blur(0);
   display: flex;
   flex-direction: column;
@@ -246,4 +250,14 @@ header .page i {
   position: relative;
   transition: padding 0.2s ease;
   width: 100%;
+}
+
+footer {
+  font-size: 9px;
+  padding: 40px 60px;
+}
+footer div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }/*# sourceMappingURL=style.css.map */
