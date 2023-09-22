@@ -7,7 +7,7 @@
 
 body {
   display: flex;
-  font-family: "Inter", Pretendard;
+  font-family: "PP Neue Montreal", Pretendard;
   font-size: 12px;
   box-sizing: border-box;
   height: 100vh;
@@ -105,7 +105,7 @@ a {
   border: none 0;
   padding: 10px;
   padding-left: 16px;
-  font-family: "Inter", Pretendard;
+  font-family: "PP Neue Montreal", Pretendard;
   font-size: 10px;
   color: rgb(150, 150, 150);
 }
@@ -198,4 +198,52 @@ header .page i {
   font-size: 10px;
   color: rgb(80, 80, 80);
   letter-spacing: -0.8px;
+}
+
+.category_wrapper .category_background {
+  border-radius: 12px;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+.category_wrapper .backdrop {
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+  background: transparent;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.category_wrapper .category_background .elemColor {
+  border-radius: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.category_wrapper {
+  aspect-ratio: 3/5;
+  width: 100%;
+}
+
+.category_wrapper .category_element {
+  -webkit-backdrop-filter: blur(0);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: flex-end;
+  padding: 10px;
+  position: relative;
+  transition: padding 0.2s ease;
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

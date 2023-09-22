@@ -1,4 +1,4 @@
-$font-family: 'Inter', Pretendard;
+$font-family: 'PP Neue Montreal', Pretendard;
 
 * {
     margin: 0;
@@ -201,4 +201,52 @@ header {
             letter-spacing: -.8px;
         }
     }
+}
+
+.category_wrapper .category_background {
+    border-radius: 12px;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.category_wrapper .backdrop {
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+    background: transparent;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.category_wrapper .category_background .elemColor {
+    border-radius: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.category_wrapper {
+    aspect-ratio: 3/5;
+    width: 100%;
+}
+
+.category_wrapper .category_element {
+    -webkit-backdrop-filter: blur(0);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: flex-end;
+    padding: 10px;
+    position: relative;
+    transition: padding .2s ease;
+    width: 100%;
 }
