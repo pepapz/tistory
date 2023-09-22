@@ -31,6 +31,8 @@ a {
 }
 
 .ct {
+  display: flex;
+  flex-direction: column;
   position: relative;
   width: 20%;
   width: 240px;
@@ -260,4 +262,14 @@ footer div {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.site_menu {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.menu {
+  flex: 1;
 }/*# sourceMappingURL=style.css.map */
