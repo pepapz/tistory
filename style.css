@@ -40,12 +40,11 @@ a {
   height: 100%;
   overflow-y: scroll;
   /*box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 3px 0px;*/
-  border-right: 1px solid rgb(238, 242, 244);
 }
 .ct div + div {
   margin-top: 25px;
   padding-top: 25px;
-  border-top: 1px solid rgb(238, 242, 244);
+  /*border-top: 1px solid rgb(238, 242, 244);*/
 }
 
 .ct::-webkit-scrollbar {
@@ -137,10 +136,10 @@ a {
 }
 
 .a2 {
-  background-image: url(images/a2.jpeg);
+  background-image: url(images/ric.jpg);
   background-size: cover;
   background-position: 0% 0;
-  box-shadow: #d4d4d4 inset 0px 0px 30px 0px;
+  box-shadow: #ffffff inset 0px 0px 30px 0px;
 }
 
 .content {
@@ -163,6 +162,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+header h1 {
+  font-weight: 500;
 }
 header .page {
   display: flex;
@@ -191,6 +193,9 @@ header .page i {
 .profile img {
   width: 70px;
   border-radius: 20px;
+  aspect-ratio: 1/1;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .profile .sub {
   margin-left: 10px;
@@ -256,20 +261,44 @@ header .page i {
 
 footer {
   font-size: 9px;
-  padding: 40px 60px;
+  padding: 40px 60px 50px;
 }
 footer div {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .site_menu {
   display: flex;
   justify-content: space-between;
   width: 100%;
 }
+.site_menu i {
+  color: #333;
+  font-size: 7px;
+  transition: color 0.3s ease-in-out;
+}
 
 .menu {
   flex: 1;
-}/*# sourceMappingURL=style.css.map */
+}
+
+/*
+.tt_category {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: opacity 200ms linear, max-height 200ms linear;
+    will-change: opacity, max-height;
+}
+
+.cate_open {
+    cursor: pointer;
+}
+.cate_open[aria-expanded=true] + .tt_category {
+    opacity: 1;
+    max-height: 500px;
+    transition: all 200ms linear;
+    will-change: opacity, max-height;
+}
+*//*# sourceMappingURL=style.css.map */
